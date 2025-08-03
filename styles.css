@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap');
+
+:root {
+    --color-background: #fff7eb;
+    --color-primary: #d9994a;
+    --color-accent: #f05d23;
+    --color-highlight: #ffd166;
+    --color-text-dark: #220c00;
+    --color-text-light: #b7b7b7;
+    --font_1: "Sora", sans-serif;
+    --font_2: "Nunito", sans-serif;
+    --max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-background);
+    font-family: var(--font_2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    background-color: var(--color-background);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px var(--color-text-dark);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo a {
+    font-family: var(--font_1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.bttm {
+    font-size: 1.2rem;
+    font-family: var(--font_2);
+    color: var(--color-text-dark);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul a {
+    color: var(--color-text-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    color: var(--color-accent);
+}
+
+.contact a {
+    background-color: var(--color-text-dark);
+    color: var(--color-accent);
+    padding: .7rem;
+    outline: 1px solid var(--color-text-dark);
+    border-radius: .5rem;
+}
+
+.contact a:hover {
+    background-color: var(--color-background);
+}
+
+main {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(asset/hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_txt h1 {
+    text-align: center;
+    font-family: var(--font_1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-background);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px var(--color-text-dark);
+    margin: 2rem;
+}
+
+.hero_txt p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-background);
+    text-shadow: 1px 1px 5px var(--color-text-dark);
+}
+
+.con{
+    width: 80%;
+    margin: 5rem auto;
+    padding: 3rem 0;
+    border-top: 2px solid var(--color-text-dark);
+}
+
+.con h2{
+    text-align: center;
+    font-family: var(--font_1);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box_img{
+    width: 100%;
+    display: flex;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.box_img img{
+    width: 100%;
+    transition: .3s;
+}
+
+.box_img img:hover{
+    scale: 1.05;
+}
+
+.box_desc{
+    font-family: var(--font_1);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.box_price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn{
+    margin: 2rem;
+}
+
+.box a{
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    outline: 1px solid;
+    background-color: var(--color-text-dark);
+    color: var(--color-accent);
+    transition: .3s;
+}
+
+.box a:hover, .box a:active{
+    background-color: var(--color-background);
+}
