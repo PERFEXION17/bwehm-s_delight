@@ -231,7 +231,7 @@ h2 {
 .box a {
   display: inline-flex;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   outline: 1px solid;
   background-color: var(--color-text-dark);
